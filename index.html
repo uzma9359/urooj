@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Collection</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .card {
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      }
+
+      .card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-bottom: 0px;
+      }
+
+      .card-icon img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        color: black;
+        margin-bottom: 5px;
+      }
+
+      .card-rating {
+        font-size: 20px;
+        color: #ffcc00;
+        margin-bottom: 6px; /* Reduce the gap between rating and intro */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+
+      .card-intro {
+        font-size: 14px;
+        color: black;
+        margin-top: 13px; /* Reduce the gap between rating and intro */
+      }
+
+      .card-link {
+        text-decoration: none;
+        color: #3498db;
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card-container">
+      <div class="card" style="background-color: green">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p1.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>REACT.GG</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4/5 - 11 reviews</div>
+        <div class="card-intro">The interactive way to master modern React</div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: purple">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p2.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>REACT QUERY</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.94/3 - 33 reviews</div>
+        <div class="card-intro">
+          The official React Query course will get you building apps like a pro.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: lightblue">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p3.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>REACT ROUTER</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.88/3 - 42 reviews</div>
+        <div class="card-intro">
+          We'll get you off to the races bulding complex apps with react router.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: white">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p4.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>MODERN JAVASCRIPT</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.9/5 - 205 reviews</div>
+        <div class="card-intro">
+          Lay a solid foundation for your javaScript knowledge using the latest
+          features.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: red">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p5.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>ADVANCED JAVASCRIPT</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.91/5 - 219 reviews</div>
+        <div class="card-intro">
+          Take your javascript skills to the next level and master the mother
+          language.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: orangered">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p6.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>TYEPSCRIPT</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.84/5 - 45 reviews</div>
+        <div class="card-intro">
+          Our course is the complete guide that takes you from zero to
+          TypeScript hero.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: pink">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p7.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>REACT W/ TYPESCRIPT</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.86/5 - 21 reviews</div>
+        <div class="card-intro">
+          Feel comfortable working on any React app by adding TypeScript to your
+          toolkit.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+      <div class="card" style="background-color: yellow">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="./img/p8.png" alt="React.GG Logo" />
+          </div>
+          <div class="card-title"><strong>CLASSIC REACT</strong></div>
+        </div>
+        <div class="card-rating">★★★★★</div>
+        <div class="rating-text">4.9/5 - 229 reviews</div>
+        <div class="card-intro">
+          If you're still stuck using class based React at work,this is the
+          course for you.
+        </div>
+        <a href="" class="card-link">Learn More</a>
+      </div>
+
+      <!-- Add other cards here with similar structure -->
+    </div>
+  </body>
+</html>
